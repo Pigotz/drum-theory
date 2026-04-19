@@ -24,8 +24,8 @@
 
 ### Audio
 
-- [ ] **AUDIO-01**: LoopPlayer.vue component plays a drumless backing track on loop during Act 4 Human Drum slide
-- [ ] **AUDIO-02**: LoopPlayer play/pause is controlled by a button click (no autoplay — browser gesture required)
+- [x] **AUDIO-01**: LoopPlayer.vue component plays a drumless backing track on loop during Act 4 Human Drum slide
+- [x] **AUDIO-02**: LoopPlayer play/pause is controlled by a button click (no autoplay — browser gesture required)
 
 ### Deployment
 
@@ -75,8 +75,8 @@
 | SLIDE-04 | Phase 1 | Pending |
 | SLIDE-05 | Phase 1 | Pending |
 | NOTE-04 | Phase 1 | Pending |
-| AUDIO-01 | Phase 1 | Pending |
-| AUDIO-02 | Phase 1 | Pending |
+| AUDIO-01 | Phase 1 | Complete |
+| AUDIO-02 | Phase 1 | Complete |
 | DEPLOY-01 | Phase 1 | Complete (01-01) |
 | DEPLOY-02 | Phase 1 | Pending |
 | NOTE-01 | Phase 2 | Pending |

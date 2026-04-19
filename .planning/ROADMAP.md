@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Slidev project, configure base path, wire deploy scripts
 - [ ] 01-02-PLAN.md — Create SVG note symbols, silent MP3 placeholder, drum-sheet placeholder
-- [ ] 01-03-PLAN.md — Create LoopPlayer.vue backing track component
+- [x] 01-03-PLAN.md — Create LoopPlayer.vue backing track component
 - [ ] 01-04-PLAN.md — Author all 13 slides with content, v-click, groove grid, and speaker notes
 - [ ] 01-05-PLAN.md — Build and deploy to GitHub Pages, verify live URL
 
