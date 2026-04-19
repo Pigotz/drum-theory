@@ -42,11 +42,13 @@ layout: two-cols
 
 ::right::
 
-<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+
+<img src="/svgs/pizza-whole.svg" alt="Whole pizza" style="height: 120px; width: auto;" />
 
 <v-click>
 
-<div style="padding: 24px;">
+<div style="padding: 0 24px; text-align: center;">
 
 *The whole pizza — you wait forever*
 
@@ -74,11 +76,13 @@ layout: two-cols
 
 ::right::
 
-<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+
+<img src="/svgs/pizza-half.svg" alt="Half pizza" style="height: 120px; width: auto;" />
 
 <v-click>
 
-<div style="padding: 24px;">
+<div style="padding: 0 24px; text-align: center;">
 
 *Half a pizza*
 
@@ -106,11 +110,13 @@ layout: two-cols
 
 ::right::
 
-<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+
+<img src="/svgs/pizza-quarter.svg" alt="Quarter pizza slice" style="height: 120px; width: auto;" />
 
 <v-click>
 
-<div style="padding: 24px;">
+<div style="padding: 0 24px; text-align: center;">
 
 *A slice — this is the normal pulse, what you tap your foot to*
 
@@ -138,11 +144,13 @@ layout: two-cols
 
 ::right::
 
-<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+
+<img src="/svgs/pizza-eighth.svg" alt="Eighth pizza slice" style="height: 120px; width: auto;" />
 
 <v-click>
 
-<div style="padding: 24px;">
+<div style="padding: 0 24px; text-align: center;">
 
 *Half a slice — two fit in one beat*
 
@@ -170,11 +178,13 @@ layout: two-cols
 
 ::right::
 
-<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+
+<img src="/svgs/pizza-sixteenth.svg" alt="Sixteenth pizza slice" style="height: 120px; width: auto;" />
 
 <v-click>
 
-<div style="padding: 24px;">
+<div style="padding: 0 24px; text-align: center;">
 
 *A tiny bite — four fit in one beat, things get spicy*
 
