@@ -217,6 +217,18 @@ Cue: Move on only after you see people nodding or looking thoughtful.
 -->
 
 ---
+layout: image
+image: /drum-positions.png
+backgroundSize: contain
+background: white
+---
+
+<!--
+Spoken: "Before we get to notation — here's the spatial logic. High drums sit at the top of the staff, kick at the bottom. Position = instrument."
+Timing: 20 seconds. Let the diagram breathe. Point if you can project it.
+-->
+
+---
 layout: two-cols
 ---
 
