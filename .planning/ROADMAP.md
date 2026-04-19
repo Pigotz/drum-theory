@@ -27,8 +27,15 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The backing track plays and loops when the button is clicked on the Human Drum slide; it does not autoplay
   4. Presenter view shows speaker notes with timing cues on every slide and a 12-minute countdown timer
   5. The Act 4 groove grid slide renders an HTML color grid with kick=red, snare=blue, hi-hat=yellow beat patterns
-**Plans**: TBD
+**Plans**: 5 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Slidev project, configure base path, wire deploy scripts
+- [ ] 01-02-PLAN.md — Create SVG note symbols, silent MP3 placeholder, drum-sheet placeholder
+- [ ] 01-03-PLAN.md — Create LoopPlayer.vue backing track component
+- [ ] 01-04-PLAN.md — Author all 13 slides with content, v-click, groove grid, and speaker notes
+- [ ] 01-05-PLAN.md — Build and deploy to GitHub Pages, verify live URL
 
 **Research notes:**
 - Wire GitHub Pages deploy immediately after scaffold — base path (`/drum-theory/`) is the riskiest external integration; silent 404s if misconfigured
@@ -59,5 +66,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Slide Skeleton + Backing Track + Deploy | 0/? | Not started | - |
+| 1. Slide Skeleton + Backing Track + Deploy | 0/5 | Not started | - |
 | 2. VexFlow Drum Notation | 0/? | Not started | - |
