@@ -310,10 +310,10 @@ Cue: Move immediately to volunteer roles slide after this.
 -->
 
 ---
-layout: none
+layout: default
 ---
 
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: stretch; height: 100%; padding: 48px; gap: 32px;">
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: stretch; height: 100%; padding: 0 16px; gap: 32px;">
 
 <h1 style="font-size: 36px; font-weight: 700; margin: 0; text-align: center;">Your Roles Tonight</h1>
 
