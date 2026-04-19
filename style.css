@@ -8,8 +8,9 @@ body {
   background: #0f1117;
 }
 
-.slidev-slide {
-  background: #0f1117;
+.slidev-slide,
+.slidev-layout {
+  background-color: #0f1117 !important;
   color: #e2e8f0;
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -28,6 +29,3 @@ table td {
   border: 1px solid #2d3244;
 }
 
-.slidev-layout.image img {
-  mix-blend-mode: multiply;
-}
