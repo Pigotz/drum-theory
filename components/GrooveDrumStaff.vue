@@ -47,15 +47,21 @@ function buildBar(barHh: number[], barSn: number[], barKk: number[], showRests: 
       note.setStyle({ fillStyle: COLORS.snare, strokeStyle: COLORS.snare })
       return note
     } else {
+      // Rest: only visible when kick is also silent at this step
+      const allSilent = !barKk[i]
       const note = new StaveNote({ keys: ['b/4'], duration: '8r', stemDirection: Stem.UP })
-      note.setStyle(restStyle)
+      note.setStyle(showRests && allSilent ? restStyle : { fillStyle: 'none', strokeStyle: 'none' })
       return note
     }
   })
 
-  const downNotes: StaveNote[] = barKk.map(hit => {
+  const downNotes: StaveNote[] = barKk.map((hit, i) => {
     const note = new StaveNote({ keys: ['f/4'], duration: hit ? '8' : '8r', stemDirection: Stem.DOWN })
-    note.setStyle(hit ? { fillStyle: COLORS.kick, strokeStyle: COLORS.kick } : restStyle)
+    // Rest: only visible when hihat and snare are also silent at this step
+    const allSilent = !barHh[i] && !barSn[i]
+    note.setStyle(hit
+      ? { fillStyle: COLORS.kick, strokeStyle: COLORS.kick }
+      : showRests && allSilent ? restStyle : { fillStyle: 'none', strokeStyle: 'none' })
     return note
   })
 
