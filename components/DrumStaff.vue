@@ -40,7 +40,7 @@ function render() {
 
   try {
     // 1. SVG renderer (SVG backend only — CLAUDE.md locked)
-    const renderer = new Renderer(container.value, Renderer.Backends.SVG)
+    const renderer = new Renderer(container.value as HTMLDivElement, Renderer.Backends.SVG)
     renderer.resize(props.width, props.height)
     const ctx = renderer.getContext()
 
@@ -69,7 +69,7 @@ function render() {
       return new StaveNote({
         keys,
         duration: beat.duration,
-        stem_direction: Stem.UP,
+        stemDirection: Stem.UP,
       })
     })
 
@@ -79,7 +79,7 @@ function render() {
       return new StaveNote({
         keys: [beat.position],
         duration,
-        stem_direction: Stem.DOWN,
+        stemDirection: Stem.DOWN,
       })
     })
 
@@ -89,9 +89,9 @@ function render() {
     props.pattern.voiceUp.forEach((beat, i) => {
       if (beat.chordMate) {
         // Chord beat: color each notehead independently (RESEARCH.md Pattern 4)
-        upNotes[i].setKeyStyle(0, { fillStyle: COLORS[beat.instrument], strokeStyle: COLORS[beat.instrument] })
-        upNotes[i].setKeyStyle(1, { fillStyle: COLORS[beat.chordMate.instrument], strokeStyle: COLORS[beat.chordMate.instrument] })
-        upNotes[i].setStemStyle({ fillStyle: '#ffffff', strokeStyle: '#ffffff' })
+        upNotes[i].setKeyStyle(0, { fillStyle: COLORS[beat.instrument], strokeStyle: '#e2e8f0' })
+        upNotes[i].setKeyStyle(1, { fillStyle: COLORS[beat.chordMate.instrument], strokeStyle: '#e2e8f0' })
+        upNotes[i].setStemStyle({ fillStyle: '#e2e8f0', strokeStyle: '#e2e8f0' })
       } else {
         // Single-instrument beat: color the whole note
         upNotes[i].setStyle({
@@ -114,9 +114,9 @@ function render() {
     // 7. Voices
     const numBeats = props.pattern.beats ?? 4
     const beatValue = props.pattern.beatValue ?? 4
-    const voice1 = new Voice({ num_beats: numBeats, beat_value: beatValue })
+    const voice1 = new Voice({ numBeats: numBeats, beatValue: beatValue })
       .addTickables(upNotes)
-    const voice2 = new Voice({ num_beats: numBeats, beat_value: beatValue })
+    const voice2 = new Voice({ numBeats: numBeats, beatValue: beatValue })
       .addTickables(downNotes)
 
     // 8. Format two voices together (staveWidth - 60 accounts for clef + time sig left margin)

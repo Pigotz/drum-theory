@@ -247,13 +247,13 @@ The position tells you **which drum**, not which pitch.
 
 <ul style="list-style: none; padding: 0; margin-top: 24px;">
   <li style="color: #eab308; font-weight: 700; margin-bottom: 12px;">
-    ✕ Hi-hat — top of staff (x noteheads above the lines)
+    ✕ Hi-hat — G/5 (top line)
   </li>
   <li style="color: #3b82f6; font-weight: 700; margin-bottom: 12px;">
-    ● Snare — middle (3rd space)
+    ● Snare — C/5 (middle line)
   </li>
   <li style="color: #ef4444; font-weight: 700; margin-bottom: 12px;">
-    ● Kick — bottom (below the staff)
+    ● Kick — F/4 (bottom line)
   </li>
 </ul>
 
