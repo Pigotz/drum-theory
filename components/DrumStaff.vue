@@ -50,8 +50,8 @@ function render() {
     const staveWidth = props.width - staveX - 10
     const stave = new Stave(staveX, staveY, staveWidth)
     stave.addClef('percussion').addTimeSignature('4/4')
-    ctx.setStrokeStyle('#ffffff')
-    ctx.setFillStyle('#ffffff')
+    ctx.setStrokeStyle('#e2e8f0')
+    ctx.setFillStyle('#e2e8f0')
     stave.setContext(ctx).draw()
 
     // 4. Build voiceUp notes (hi-hat and snare, stems up)
