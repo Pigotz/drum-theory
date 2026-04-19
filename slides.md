@@ -345,7 +345,9 @@ Timing: ~60 seconds. Allow laughter. Keep energy up.
 layout: two-cols
 ---
 
-<table style="border-collapse: collapse; width: 100%; margin-top: 8px;">
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+<table style="border-collapse: collapse; width: 100%;">
+
   <thead>
     <tr>
       <th style="color: white; font-weight: 700; padding: 8px; text-align: left; font-size: 14px;"></th>
@@ -395,6 +397,7 @@ layout: two-cols
     </tr>
   </tbody>
 </table>
+</div>
 
 ::right::
 
