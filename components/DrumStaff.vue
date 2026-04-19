@@ -44,10 +44,6 @@ function render() {
     renderer.resize(props.width, props.height)
     const ctx = renderer.getContext()
 
-    // 2. Global white style for dark seriph background (D-09)
-    ctx.setFillStyle('white')
-    ctx.setStrokeStyle('white')
-
     // 3. Percussion stave
     const staveX = 10
     const staveY = 30
@@ -102,7 +98,9 @@ function render() {
       }
     })
     props.pattern.voiceDown.forEach((beat, i) => {
-      if (!beat.rest) {
+      if (beat.rest) {
+        downNotes[i].setStyle({ fillStyle: 'none', strokeStyle: 'none' })
+      } else {
         downNotes[i].setStyle({
           fillStyle: COLORS[beat.instrument],
           strokeStyle: COLORS[beat.instrument],
@@ -123,15 +121,13 @@ function render() {
       .joinVoices([voice1, voice2])
       .format([voice1, voice2], staveWidth - 60)
 
-    // 9. Beam eighth notes in voiceUp — group consecutive eighths into beams of 4
+    // 9. Beam eighth notes in voiceUp — group consecutive eighths into beams of 2
     const beams: Beam[] = []
     const eighthNotes = upNotes.filter((_, i) => props.pattern.voiceUp[i].duration === '8')
-    if (eighthNotes.length >= 4) {
-      const beam1 = new Beam(eighthNotes.slice(0, 4))
-      const beam2 = new Beam(eighthNotes.slice(4, 8))
-      beam1.setStyle({ fillStyle: COLORS.hihat, strokeStyle: COLORS.hihat })
-      beam2.setStyle({ fillStyle: COLORS.hihat, strokeStyle: COLORS.hihat })
-      beams.push(beam1, beam2)
+    for (let i = 0; i + 1 < eighthNotes.length; i += 2) {
+      const beam = new Beam(eighthNotes.slice(i, i + 2))
+      beam.setStyle({ fillStyle: COLORS.hihat, strokeStyle: COLORS.hihat })
+      beams.push(beam)
     }
 
     // 10. Draw voices then beams (beams must draw after voices)
