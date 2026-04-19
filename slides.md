@@ -22,6 +22,7 @@ Timing: 20 seconds. Don't explain anything yet.
 ---
 layout: image
 image: /drum-sheet.png
+backgroundSize: contain
 ---
 
 <!--
