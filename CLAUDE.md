@@ -22,6 +22,14 @@ See `.planning/PROJECT.md` for full context.
 - Slidev lifecycle: use `onSlideEnter`/`onSlideLeave` from `@slidev/client` — not `onMounted`/`onUnmounted`
 - Color coding (consistent throughout): kick = red (`#ef4444`), snare = blue (`#3b82f6`), hi-hat = yellow (`#eab308`)
 
+## Design References
+
+Visual inspiration for slide aesthetics and component styling:
+
+- https://dribbble.com/shots/11065516-Guy-drummer-and-drum-set
+- https://dribbble.com/shots/4378208-Drum-till-Death
+- https://dribbble.com/shots/26947901-Drum-musician-portrait
+
 ## GSD Workflow
 
 This project uses GSD for phased planning and execution.
