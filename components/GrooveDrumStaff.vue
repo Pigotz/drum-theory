@@ -5,10 +5,12 @@ import { Renderer, Stave, StaveNote, Voice, Formatter, Stem, Beam } from 'vexflo
 
 // Multi-bar grooves (16 steps) render as bars side-by-side on one row.
 // Single-bar grooves (8 steps) behave exactly as before.
+// showRests: render 8th rests visibly (default false = rests are invisible).
 const props = withDefaults(defineProps<{
   groove?: { hh: number[]; sn: number[]; kk: number[] }
   width?: number
   height?: number
+  showRests?: boolean
 }>(), {
   groove: () => ({
     hh: [1, 1, 1, 1, 1, 1, 1, 1],
@@ -17,12 +19,17 @@ const props = withDefaults(defineProps<{
   }),
   width: 480,
   height: 150,
+  showRests: false,
 })
 
 const container = ref<HTMLElement | null>(null)
 const COLORS = { kick: '#ef4444', snare: '#3b82f6', hihat: '#eab308' }
 
-function buildBar(barHh: number[], barSn: number[], barKk: number[]) {
+function buildBar(barHh: number[], barSn: number[], barKk: number[], showRests: boolean) {
+  const restStyle = showRests
+    ? { fillStyle: '#e2e8f0', strokeStyle: '#e2e8f0' }
+    : { fillStyle: 'none', strokeStyle: 'none' }
+
   const upNotes: StaveNote[] = barHh.map((hhHit, i) => {
     const snHit = barSn[i]
     if (hhHit && snHit) {
@@ -41,16 +48,14 @@ function buildBar(barHh: number[], barSn: number[], barKk: number[]) {
       return note
     } else {
       const note = new StaveNote({ keys: ['b/4'], duration: '8r', stemDirection: Stem.UP })
-      note.setStyle({ fillStyle: 'none', strokeStyle: 'none' })
+      note.setStyle(restStyle)
       return note
     }
   })
 
   const downNotes: StaveNote[] = barKk.map(hit => {
     const note = new StaveNote({ keys: ['f/4'], duration: hit ? '8' : '8r', stemDirection: Stem.DOWN })
-    note.setStyle(hit
-      ? { fillStyle: COLORS.kick, strokeStyle: COLORS.kick }
-      : { fillStyle: 'none', strokeStyle: 'none' })
+    note.setStyle(hit ? { fillStyle: COLORS.kick, strokeStyle: COLORS.kick } : restStyle)
     return note
   })
 
@@ -98,7 +103,7 @@ async function render() {
       if (isFirst) stave.addClef('percussion').addTimeSignature('4/4')
       stave.setContext(ctx).draw()
 
-      const { upNotes, downNotes } = buildBar(barHh, barSn, barKk)
+      const { upNotes, downNotes } = buildBar(barHh, barSn, barKk, props.showRests)
 
       const voice1 = new Voice({ numBeats: 4, beatValue: 4 }).addTickables(upNotes)
       const voice2 = new Voice({ numBeats: 4, beatValue: 4 }).addTickables(downNotes)
