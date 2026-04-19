@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+  --slidev-theme-primary: #e2e8f0;
+}
+
+body {
+  background: #0f1117;
+}
+
+.slidev-slide {
+  background: #0f1117;
+  color: #e2e8f0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #e2e8f0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.slidev-layout.two-cols > *:last-child {
+  background: #1a1d27;
+}
+
+table td {
+  background: #1a1d27;
+  border: 1px solid #2d3244;
+}
+
+.slidev-layout.image img {
+  mix-blend-mode: multiply;
+}

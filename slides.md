@@ -1,5 +1,4 @@
 ---
-theme: seriph
 title: "You Can't Read This"
 drawings:
   persist: false
