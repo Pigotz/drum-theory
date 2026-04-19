@@ -356,12 +356,15 @@ Timing: ~60 seconds. Allow laughter. Keep energy up.
 layout: two-cols-header
 ---
 
-<h1 style="text-align: center;">Let's Play</h1>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+  <h1>Let's Play</h1>
+  <h2>Basic Rock groove</h2>
+</div>
 
 ::left::
 
 <GrooveTable :groove="{
-  hh: [1, 1, 1, 1, 1, 1, 1, 1],
+  hh: [1, 0, 1, 0, 1, 0, 1, 0],
   sn: [0, 0, 1, 0, 0, 0, 1, 0],
   kk: [1, 0, 0, 0, 1, 0, 0, 0],
 }" />
@@ -373,21 +376,128 @@ layout: two-cols-header
   <LoopPlayer />
 </div>
 
-<!--
-Spoken: "Left side is your score. Right side is your conductor."
-Spoken: "HH — hi-hat — every beat and every 'and'. SN — snare — two and four. KK — kick — one and three."
-Spoken: "Let's run through it dry first, then I'll hit play."
-Timing: ~5 minutes for the whole Human Drum session. Run Groove 1 at least 3 times.
-Cue: Click Play only after a dry run. Stop when energy peaks — don't let it drag.
--->
+---
+layout: two-cols-header
+---
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+  <h1>Let's Play</h1>
+  <h2>Basic Rock groove 2</h2>
+</div>
+
+::left::
+
+<GrooveTable :groove="{
+  hh: [1, 1, 1, 1, 1, 1, 1, 1],
+  sn: [0, 0, 1, 0, 0, 0, 1, 0],
+  kk: [1, 0, 0, 0, 1, 1, 0, 0],
+}" />
+
+::right::
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 24px;">
+  <p style="font-size: 18px; text-align: center;">Hit your drum on the colored beats</p>
+  <LoopPlayer />
+</div>
+
+---
+layout: two-cols-header
+---
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+  <h1>Let's Play</h1>
+  <h2>Basic Rock groove 3</h2>
+</div>
+
+::left::
+
+<GrooveTable :groove="{
+  hh: [1, 1, 1, 1, 1, 1, 1, 1],
+  sn: [0, 0, 1, 0, 0, 0, 1, 0],
+  kk: [1, 0, 0, 0, 0, 1, 0, 0],
+}" />
+
+::right::
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 24px;">
+  <p style="font-size: 18px; text-align: center;">Hit your drum on the colored beats</p>
+  <LoopPlayer />
+</div>
+
+---
+layout: two-cols-header
+---
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+  <h1>Let's Play</h1>
+  <h2>Cha-tu Cha-tu</h2>
+</div>
+
+::left::
+
+<GrooveTable :groove="{
+  hh: [1, 0, 1, 0, 1, 0, 1, 0],
+  sn: [1, 0, 1, 0, 1, 0, 1, 0],
+  kk: [0, 1, 0, 1, 0, 1, 0, 1],
+}" />
+
+::right::
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 24px;">
+  <p style="font-size: 18px; text-align: center;">Hit your drum on the colored beats</p>
+  <LoopPlayer />
+</div>
+
+---
+layout: two-cols-header
+---
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+  <h1>Let's Play</h1>
+  <h2>Punk groove</h2>
+</div>
+
+::left::
+
+<GrooveTable :groove="{
+  hh: [1, 1, 1, 1, 1, 1, 1, 1],
+  sn: [0, 0, 1, 0, 0, 0, 1, 0],
+  kk: [1, 1, 0, 0, 1, 1, 0, 0],
+}" />
+
+::right::
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 24px;">
+  <p style="font-size: 18px; text-align: center;">Hit your drum on the colored beats</p>
+  <LoopPlayer />
+</div>
+
+---
+layout: two-cols-header
+---
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px;">
+  <h1>Let's Play</h1>
+  <h2>Disco groove</h2>
+</div>
+
+::left::
+
+<GrooveTable :groove="{
+  hh: [0, 1, 0, 1, 0, 1, 0, 1],
+  sn: [0, 0, 1, 0, 0, 0, 1, 0],
+  kk: [1, 0, 0, 0, 1, 0, 0, 0],
+}" />
+
+::right::
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 24px;">
+  <p style="font-size: 18px; text-align: center;">Hit your drum on the colored beats</p>
+  <LoopPlayer />
+</div>
 
 ---
 layout: end
 ---
 
 Thanks for being my drum kit.
-
-<!--
-Spoken: "Thanks for being my drum kit."
-Timing: Let it sit. Take a bow. Done.
--->
