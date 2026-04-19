@@ -356,7 +356,7 @@ Timing: ~60 seconds. Allow laughter. Keep energy up.
 layout: two-cols-header
 ---
 
-# Let's Play
+<h1 style="text-align: center;">Let's Play</h1>
 
 ::left::
 
