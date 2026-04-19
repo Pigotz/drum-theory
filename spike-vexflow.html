@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VexFlow 5.0.0 Percussion Spike</title>
+  <style>
+    body {
+      background: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      opacity: 0.7;
+    }
+    #container {
+      background: transparent;
+    }
+    #status {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>VexFlow 5.0.0 — Percussion Spike (Groove 1)</h1>
+  <div id="container"></div>
+  <div id="status">Rendering...</div>
+
+  <script type="module">
+    import {
+      Renderer,
+      Stave,
+      StaveNote,
+      Voice,
+      Formatter,
+      Stem,
+      Beam
+    } from 'https://unpkg.com/vexflow@5.0.0/build/esm/entry/vexflow.js'
+
+    const WIDTH = 500
+    const HEIGHT = 180
+
+    try {
+      const container = document.getElementById('container')
+
+      // 1. Create SVG renderer — SVG backend only (CLAUDE.md constraint)
+      const renderer = new Renderer(container, Renderer.Backends.SVG)
+      renderer.resize(WIDTH, HEIGHT)
+      const ctx = renderer.getContext()
+
+      // 2. Global white style for dark seriph slide background (D-09)
+      ctx.setFillStyle('white')
+      ctx.setStrokeStyle('white')
+
+      // 3. Percussion stave with clef and time signature
+      const staveX = 10
+      const staveY = 30
+      const staveWidth = WIDTH - staveX - 10
+      const stave = new Stave(staveX, staveY, staveWidth)
+      stave.addClef('percussion').addTimeSignature('4/4')
+      stave.setContext(ctx).draw()
+
+      // 4. voiceUp — 8 eighth notes (hi-hat x-noteheads; beats 2+4 are chords)
+      // Per-key type syntax 'a/5/x' gives x-notehead on that key only (RESEARCH.md Pattern 2)
+      const hihat   = '#eab308'  // yellow
+      const snare   = '#3b82f6'  // blue
+      const kick    = '#ef4444'  // red
+
+      const voiceUpNotes = [
+        // index 0: hi-hat only
+        new StaveNote({ keys: ['a/5/x'], duration: '8', stem_direction: Stem.UP }),
+        // index 1: hi-hat only
+        new StaveNote({ keys: ['a/5/x'], duration: '8', stem_direction: Stem.UP }),
+        // index 2: beat 2 — hi-hat + snare chord
+        new StaveNote({ keys: ['a/5/x', 'c/5'], duration: '8', stem_direction: Stem.UP }),
+        // index 3: hi-hat only
+        new StaveNote({ keys: ['a/5/x'], duration: '8', stem_direction: Stem.UP }),
+        // index 4: hi-hat only
+        new StaveNote({ keys: ['a/5/x'], duration: '8', stem_direction: Stem.UP }),
+        // index 5: hi-hat only
+        new StaveNote({ keys: ['a/5/x'], duration: '8', stem_direction: Stem.UP }),
+        // index 6: beat 4 — hi-hat + snare chord
+        new StaveNote({ keys: ['a/5/x', 'c/5'], duration: '8', stem_direction: Stem.UP }),
+        // index 7: hi-hat only
+        new StaveNote({ keys: ['a/5/x'], duration: '8', stem_direction: Stem.UP }),
+      ]
+
+      // 5. voiceDown — kick on beats 1 and 3, rests on beats 2 and 4
+      const voiceDownNotes = [
+        new StaveNote({ keys: ['e/4'], duration: 'q',  stem_direction: Stem.DOWN }),  // kick beat 1
+        new StaveNote({ keys: ['b/4'], duration: 'qr', stem_direction: Stem.DOWN }),  // rest beat 2
+        new StaveNote({ keys: ['e/4'], duration: 'q',  stem_direction: Stem.DOWN }),  // kick beat 3
+        new StaveNote({ keys: ['b/4'], duration: 'qr', stem_direction: Stem.DOWN }),  // rest beat 4
+      ]
+
+      // 6. Color ALL notes BEFORE draw (D-11, Pitfall 4)
+      // Single hi-hat notes: yellow whole-note style
+      voiceUpNotes[0].setStyle({ fillStyle: hihat, strokeStyle: hihat })
+      voiceUpNotes[1].setStyle({ fillStyle: hihat, strokeStyle: hihat })
+      voiceUpNotes[3].setStyle({ fillStyle: hihat, strokeStyle: hihat })
+      voiceUpNotes[4].setStyle({ fillStyle: hihat, strokeStyle: hihat })
+      voiceUpNotes[5].setStyle({ fillStyle: hihat, strokeStyle: hihat })
+      voiceUpNotes[7].setStyle({ fillStyle: hihat, strokeStyle: hihat })
+
+      // Chord at index 2 (beat 2): key[0] = a/5 hi-hat (yellow), key[1] = c/5 snare (blue)
+      voiceUpNotes[2].setKeyStyle(0, { fillStyle: hihat, strokeStyle: hihat })
+      voiceUpNotes[2].setKeyStyle(1, { fillStyle: snare, strokeStyle: snare })
+
+      // Chord at index 6 (beat 4): same
+      voiceUpNotes[6].setKeyStyle(0, { fillStyle: hihat, strokeStyle: hihat })
+      voiceUpNotes[6].setKeyStyle(1, { fillStyle: snare, strokeStyle: snare })
+
+      // Kick notes (indices 0 and 2 in voiceDown): red
+      voiceDownNotes[0].setStyle({ fillStyle: kick, strokeStyle: kick })
+      voiceDownNotes[2].setStyle({ fillStyle: kick, strokeStyle: kick })
+
+      // 7. Two beams grouping eighth notes in sets of 4 (Pitfall 5: beam color separate)
+      const beam1 = new Beam(voiceUpNotes.slice(0, 4))
+      const beam2 = new Beam(voiceUpNotes.slice(4, 8))
+      beam1.setStyle({ fillStyle: hihat, strokeStyle: hihat })
+      beam2.setStyle({ fillStyle: hihat, strokeStyle: hihat })
+
+      // 8. Build voices and format two-voice layout (RESEARCH.md Pattern 3)
+      const voice1 = new Voice({ num_beats: 4, beat_value: 4 }).addTickables(voiceUpNotes)
+      const voice2 = new Voice({ num_beats: 4, beat_value: 4 }).addTickables(voiceDownNotes)
+
+      new Formatter()
+        .joinVoices([voice1, voice2])
+        .format([voice1, voice2], staveWidth - 60)
+
+      // 9. Draw voices first, then beams
+      voice1.draw(ctx, stave)
+      voice2.draw(ctx, stave)
+      ;[beam1, beam2].forEach(b => b.setContext(ctx).draw())
+
+      document.getElementById('status').textContent =
+        'Rendered OK — check: x-noteheads (hi-hat yellow), ovals (snare blue, kick red), beams yellow, stave white'
+
+    } catch (err) {
+      console.error('[spike] VexFlow render error:', err)
+      document.getElementById('status').textContent = 'RENDER ERROR — see console'
+    }
+  </script>
+</body>
+</html>
