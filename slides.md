@@ -363,11 +363,20 @@ layout: two-cols-header
 
 ::left::
 
-<GrooveTable :groove="{
-  hh: [1, 0, 1, 0, 1, 0, 1, 0],
-  sn: [0, 0, 1, 0, 0, 0, 1, 0],
-  kk: [1, 0, 0, 0, 1, 0, 0, 0],
-}" />
+<div style="display: flex; flex-direction: column; height: 100%;">
+  <div style="flex: 1; min-height: 0;">
+    <GrooveTable :groove="{
+      hh: [1, 0, 1, 0, 1, 0, 1, 0],
+      sn: [0, 0, 1, 0, 0, 0, 1, 0],
+      kk: [1, 0, 0, 0, 1, 0, 0, 0],
+    }" />
+  </div>
+  <GrooveDrumStaff :groove="{
+    hh: [1, 0, 1, 0, 1, 0, 1, 0],
+    sn: [0, 0, 1, 0, 0, 0, 1, 0],
+    kk: [1, 0, 0, 0, 1, 0, 0, 0],
+  }" />
+</div>
 
 ::right::
 
@@ -387,11 +396,20 @@ layout: two-cols-header
 
 ::left::
 
-<GrooveTable :groove="{
-  hh: [1, 1, 1, 1, 1, 1, 1, 1],
-  sn: [0, 0, 1, 0, 0, 0, 1, 0],
-  kk: [1, 0, 0, 0, 1, 1, 0, 0],
-}" />
+<div style="display: flex; flex-direction: column; height: 100%;">
+  <div style="flex: 1; min-height: 0;">
+    <GrooveTable :groove="{
+      hh: [1, 1, 1, 1, 1, 1, 1, 1],
+      sn: [0, 0, 1, 0, 0, 0, 1, 0],
+      kk: [1, 0, 0, 0, 1, 1, 0, 0],
+    }" />
+  </div>
+  <GrooveDrumStaff :groove="{
+    hh: [1, 1, 1, 1, 1, 1, 1, 1],
+    sn: [0, 0, 1, 0, 0, 0, 1, 0],
+    kk: [1, 0, 0, 0, 1, 1, 0, 0],
+  }" />
+</div>
 
 ::right::
 
@@ -411,11 +429,20 @@ layout: two-cols-header
 
 ::left::
 
-<GrooveTable :groove="{
-  hh: [1, 1, 1, 1, 1, 1, 1, 1],
-  sn: [0, 0, 1, 0, 0, 0, 1, 0],
-  kk: [1, 0, 0, 0, 0, 1, 0, 0],
-}" />
+<div style="display: flex; flex-direction: column; height: 100%;">
+  <div style="flex: 1; min-height: 0;">
+    <GrooveTable :groove="{
+      hh: [1, 1, 1, 1, 1, 1, 1, 1],
+      sn: [0, 0, 1, 0, 0, 0, 1, 0],
+      kk: [1, 0, 0, 0, 0, 1, 0, 0],
+    }" />
+  </div>
+  <GrooveDrumStaff :groove="{
+    hh: [1, 1, 1, 1, 1, 1, 1, 1],
+    sn: [0, 0, 1, 0, 0, 0, 1, 0],
+    kk: [1, 0, 0, 0, 0, 1, 0, 0],
+  }" />
+</div>
 
 ::right::
 
@@ -435,11 +462,20 @@ layout: two-cols-header
 
 ::left::
 
-<GrooveTable :groove="{
-  hh: [1, 0, 1, 0, 1, 0, 1, 0],
-  sn: [1, 0, 1, 0, 1, 0, 1, 0],
-  kk: [0, 1, 0, 1, 0, 1, 0, 1],
-}" />
+<div style="display: flex; flex-direction: column; height: 100%;">
+  <div style="flex: 1; min-height: 0;">
+    <GrooveTable :groove="{
+      hh: [1, 0, 1, 0, 1, 0, 1, 0],
+      sn: [1, 0, 1, 0, 1, 0, 1, 0],
+      kk: [0, 1, 0, 1, 0, 1, 0, 1],
+    }" />
+  </div>
+  <GrooveDrumStaff :groove="{
+    hh: [1, 0, 1, 0, 1, 0, 1, 0],
+    sn: [1, 0, 1, 0, 1, 0, 1, 0],
+    kk: [0, 1, 0, 1, 0, 1, 0, 1],
+  }" />
+</div>
 
 ::right::
 
@@ -459,11 +495,20 @@ layout: two-cols-header
 
 ::left::
 
-<GrooveTable :groove="{
-  hh: [1, 1, 1, 1, 1, 1, 1, 1],
-  sn: [0, 0, 1, 0, 0, 0, 1, 0],
-  kk: [1, 1, 0, 0, 1, 1, 0, 0],
-}" />
+<div style="display: flex; flex-direction: column; height: 100%;">
+  <div style="flex: 1; min-height: 0;">
+    <GrooveTable :groove="{
+      hh: [1, 1, 1, 1, 1, 1, 1, 1],
+      sn: [0, 0, 1, 0, 0, 0, 1, 0],
+      kk: [1, 1, 0, 0, 1, 1, 0, 0],
+    }" />
+  </div>
+  <GrooveDrumStaff :groove="{
+    hh: [1, 1, 1, 1, 1, 1, 1, 1],
+    sn: [0, 0, 1, 0, 0, 0, 1, 0],
+    kk: [1, 1, 0, 0, 1, 1, 0, 0],
+  }" />
+</div>
 
 ::right::
 
@@ -483,11 +528,20 @@ layout: two-cols-header
 
 ::left::
 
-<GrooveTable :groove="{
-  hh: [0, 1, 0, 1, 0, 1, 0, 1],
-  sn: [0, 0, 1, 0, 0, 0, 1, 0],
-  kk: [1, 0, 0, 0, 1, 0, 0, 0],
-}" />
+<div style="display: flex; flex-direction: column; height: 100%;">
+  <div style="flex: 1; min-height: 0;">
+    <GrooveTable :groove="{
+      hh: [0, 1, 0, 1, 0, 1, 0, 1],
+      sn: [0, 0, 1, 0, 0, 0, 1, 0],
+      kk: [1, 0, 0, 0, 1, 0, 0, 0],
+    }" />
+  </div>
+  <GrooveDrumStaff :groove="{
+    hh: [0, 1, 0, 1, 0, 1, 0, 1],
+    sn: [0, 0, 1, 0, 0, 0, 1, 0],
+    kk: [1, 0, 0, 0, 1, 0, 0, 0],
+  }" />
+</div>
 
 ::right::
 
