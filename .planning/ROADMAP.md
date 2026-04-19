@@ -13,7 +13,7 @@ Two-phase build for the "You Can't Read This" Slidev presentation. Phase 1 deliv
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Slide Skeleton + Backing Track + Deploy** - All 13 slides authored, LoopPlayer.vue working, deployed to GitHub Pages
-- [ ] **Phase 2: VexFlow Drum Notation** - DrumStaff.vue renders color-coded percussion staves in place of color grids
+- [x] **Phase 2: VexFlow Drum Notation** - DrumStaff.vue renders color-coded percussion staves in place of color grids
 
 ## Phase Details
 
@@ -56,7 +56,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Install VexFlow 5.0.0 and run percussion spike (visual rendering validation)
-- [ ] 02-02-PLAN.md — Implement DrumStaff.vue and migrate slide 9 to two-cols layout
+- [x] 02-02-PLAN.md — Implement DrumStaff.vue and migrate slide 9 to two-cols layout
 
 **Research notes:**
 - Run a VexFlow percussion spike BEFORE writing the DrumStaff.vue API — v5 x-notehead call signature, staff positions, and `addClef('percussion')` rendering must be verified empirically; v3/v4 tutorials do not apply
@@ -71,4 +71,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Slide Skeleton + Backing Track + Deploy | 5/5 | Complete | 2026-04-19 |
-| 2. VexFlow Drum Notation | 1/2 | In progress | - |
+| 2. VexFlow Drum Notation | 2/2 | Complete | 2026-04-19 |
