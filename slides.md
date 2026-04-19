@@ -353,8 +353,12 @@ Timing: ~60 seconds. Allow laughter. Keep energy up.
 -->
 
 ---
-layout: two-cols
+layout: two-cols-header
 ---
+
+# Let's Play
+
+::left::
 
 <GrooveTable :groove="{
   hh: [1, 1, 1, 1, 1, 1, 1, 1],

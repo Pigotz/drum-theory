@@ -73,7 +73,8 @@ None.
 |---|-------------|------|--------|-----------|
 | 260419-abc | Slide 13 roles as 3 horizontal rectangles | 2026-04-19 | 692b400 | [260419-abc-roles-horizontal-rectangles](.planning/quick/260419-abc-roles-horizontal-rectangles/) |
 | 260419-def | Slide 13 — vertically center title and rectangles | 2026-04-19 | 427094f | [260419-def-slide13-vertical-center](.planning/quick/260419-def-slide13-vertical-center/) |
-| 260419-ghi | Extract slide 14 groove table into reusable GrooveTable.vue | 2026-04-19 | — | [260419-ghi-groove-table-component](.planning/quick/260419-ghi-groove-table-component/) |
+| 260419-ghi | Extract slide 14 groove table into reusable GrooveTable.vue | 2026-04-19 | d0ce7b4 | [260419-ghi-groove-table-component](.planning/quick/260419-ghi-groove-table-component/) |
+| 260419-jkl | Add centered title to slide 14 above two-cols layout | 2026-04-19 | — | — |
 
 ### Blockers/Concerns
 
