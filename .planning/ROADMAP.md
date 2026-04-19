@@ -51,8 +51,12 @@ Plans:
   1. The drum notation diagram slide (slide 9) shows a VexFlow SVG stave with percussion clef and correctly positioned noteheads — hi-hat x-noteheads in yellow, snare in blue, kick in red
   2. Hi-hat stems point up and kick stems point down, correctly formatted as a two-voice layout on a single stave
   3. The color coding (kick=red, snare=blue, hi-hat=yellow) is consistent across all slides that display notation
-**Plans**: TBD
+**Plans**: 2 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 02-01-PLAN.md — Install VexFlow 5.0.0 and run percussion spike (visual rendering validation)
+- [ ] 02-02-PLAN.md — Implement DrumStaff.vue and migrate slide 9 to two-cols layout
 
 **Research notes:**
 - Run a VexFlow percussion spike BEFORE writing the DrumStaff.vue API — v5 x-notehead call signature, staff positions, and `addClef('percussion')` rendering must be verified empirically; v3/v4 tutorials do not apply
@@ -67,4 +71,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Slide Skeleton + Backing Track + Deploy | 5/5 | Complete | 2026-04-19 |
-| 2. VexFlow Drum Notation | 0/? | Not started | - |
+| 2. VexFlow Drum Notation | 0/2 | Not started | - |
