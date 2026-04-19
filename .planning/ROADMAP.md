@@ -3,7 +3,7 @@
 ## Milestones
 
 - ✅ **v1.0 MVP** — Phases 1–2 (shipped 2026-04-19)
-- 🚧 **v2.0 Polish & Aesthetics** — Phase 3 (in progress)
+- ✅ **v2.0 Polish & Aesthetics** — Phase 3 (shipped 2026-04-19)
 
 ## Phases
 
@@ -17,11 +17,11 @@ Full archive: `.planning/milestones/v1.0-ROADMAP.md`
 
 </details>
 
-### 🚧 v2.0 Polish & Aesthetics (In Progress)
+### ✅ v2.0 Polish & Aesthetics (Complete — 2026-04-19)
 
 **Milestone Goal:** Redesign all 13 slides for a sharp, dark aesthetic — dark backgrounds, on-brand typography, consistent color palette, and a VexFlow stave that renders correctly in dark mode.
 
-- [ ] **Phase 3: Visual Redesign** - Dark theme, typography, color palette, SVG symbols, and VexFlow dark-mode compatibility applied across all 13 slides
+- [x] **Phase 3: Visual Redesign** - Dark theme, typography, color palette, SVG symbols, and VexFlow dark-mode compatibility applied across all 13 slides — completed 2026-04-19
 
 ## Phase Details
 
@@ -35,12 +35,12 @@ Full archive: `.planning/milestones/v1.0-ROADMAP.md`
   3. Slide headings and body text use sharp, bold, on-brand typography throughout
   4. Kick=red, snare=blue, hi-hat=yellow are consistent across every slide, the groove grid, and the VexFlow stave
   5. DrumStaff.vue stave lines, noteheads, and stems are all visible on the dark background with per-notehead color coding intact
-**Plans**: 3 plans
+**Plans**: 3/3 complete
 
 Plans:
-- [ ] 03-01-PLAN.md — Create style.css (dark theme, Space Grotesk, groove grid, blend mode) + remove theme: seriph
-- [ ] 03-02-PLAN.md — Update DrumStaff.vue (VexFlow dark-mode context fix) + LoopPlayer.vue (restyle + onSlideLeave cleanup)
-- [ ] 03-03-PLAN.md — Visual QA across all 13 slides + production build + GitHub Pages deploy
+- [x] 03-01-PLAN.md — Create style.css (dark theme, Space Grotesk, groove grid) + remove theme: seriph
+- [x] 03-02-PLAN.md — Update DrumStaff.vue (VexFlow dark-mode context fix) + LoopPlayer.vue (restyle + onSlideLeave cleanup)
+- [x] 03-03-PLAN.md — Visual QA across all 13 slides + production build + GitHub Pages deploy
 
 **UI hint**: yes
 
@@ -50,4 +50,4 @@ Plans:
 |-------|-----------|----------------|--------|-----------|
 | 1. Slide Skeleton + Backing Track + Deploy | v1.0 | 5/5 | Complete | 2026-04-19 |
 | 2. VexFlow Drum Notation | v1.0 | 2/2 | Complete | 2026-04-19 |
-| 3. Visual Redesign | v2.0 | 0/3 | Not started | - |
+| 3. Visual Redesign | v2.0 | 3/3 | Complete | 2026-04-19 |

@@ -2,12 +2,12 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Polish & Aesthetics
-status: ready_to_plan
-stopped_at: Roadmap created — Phase 3 ready to plan
+status: complete
+stopped_at: Phase 3 complete — v2.0 milestone shipped 2026-04-19
 last_updated: "2026-04-19T00:00:00.000Z"
 last_activity: 2026-04-19
 progress:
-  percent: 0
+  percent: 100
 ---
 
 # Project State
@@ -17,21 +17,21 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-19)
 
 **Core value:** The audience walks away having actually played a drum groove together — the theory isn't the point, the experience is.
-**Current focus:** Phase 3 — Visual Redesign
+**Current focus:** Complete — v2.0 milestone shipped
 
 ## Current Position
 
-Phase: 3 of 3 (Visual Redesign)
-Plan: — (not yet planned)
-Status: Ready to plan
-Last activity: 2026-04-19 — Roadmap created for v2.0, Phase 3 defined
+Phase: 3 of 3 (Visual Redesign) — COMPLETE
+Plan: 3/3
+Status: Complete
+Last activity: 2026-04-19 — Phase 3 executed and deployed to GitHub Pages
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7 (v1.0)
+- Total plans completed: 10 (v1.0: 7, v2.0: 3)
 - Average duration: —
 - Total execution time: —
 
@@ -40,6 +40,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | v1.0 phases 1–2 | 7 | — | — |
+| v2.0 phase 3 | 3 | — | — |
 
 *Updated after each plan completion*
 
@@ -51,10 +52,16 @@ Decisions are logged in PROJECT.md Key Decisions table.
 Carried over from v1.0:
 
 - seriph theme is light background, not dark — white-on-white made VexFlow stave invisible (fixed by removing global ctx white style)
-- SVG note symbols (slides 3–7) were designed with white stroke/fill — dark theme will make them compatible again without inversion
+- SVG note symbols (slides 3–7) were designed with white stroke/fill — dark theme makes them compatible without inversion
 - Hi-hat beams in groups of 2 — standard drum notation convention
 - Kick rests hidden via fillStyle:'none' — reduces clutter without breaking voice tick count
 - base path `/drum-theory/` must stay in frontmatter — GitHub Pages constraint
+
+Added in v2.0:
+
+- Use `background-color` (not `background` shorthand) for slide backgrounds — shorthand overrides `background-image` on image layout slides
+- `@slidev/theme-default` required after removing `theme: seriph` — install as dep
+- `.slidev-layout` must be targeted alongside `.slidev-slide` for background override — theme sets bg on layout, not slide wrapper
 
 ### Pending Todos
 
@@ -62,7 +69,8 @@ None.
 
 ### Blockers/Concerns
 
-None.
+Code review CR-01: bare absolute asset paths in slides.md will 404 on GitHub Pages (pre-existing issue).
+Code review CR-02: unhandled `play()` rejection in LoopPlayer.vue causes state desync on autoplay block.
 
 ## Deferred Items
 
@@ -71,9 +79,11 @@ None.
 | Audio | PlayableDrumStaff.vue (Tone.js + beat cursor) | future | v1.0 Roadmap init |
 | Automation | GitHub Actions auto-deploy | future | v1.0 Requirements |
 | Presenter | Video/GIF clips of presenter playing | future | v1.0 Requirements |
+| Bug | CR-01: bare absolute asset paths in slides.md | future | Phase 3 code review |
+| Bug | CR-02: LoopPlayer play() promise unhandled rejection | future | Phase 3 code review |
 
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Roadmap created — run `/gsd-plan-phase 3` to plan Phase 3
+Stopped at: v2.0 milestone complete — presentation deployed at https://pigotz.github.io/drum-theory/
 Resume file: None
