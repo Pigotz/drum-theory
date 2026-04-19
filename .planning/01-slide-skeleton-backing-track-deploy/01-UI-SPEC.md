@@ -64,8 +64,8 @@ Exceptions:
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
 | Body | 18px | 400 | 1.5 | Slide bullet text, speaker notes |
-| Label | 14px | 600 | 1.4 | Groove grid beat labels (1, +, 2, +…), LoopPlayer button text |
-| Heading | 28px | 600 | 1.2 | Slide `<h2>` titles (two-cols layout heading) |
+| Label | 14px | 700 | 1.4 | Groove grid beat labels (1, +, 2, +…), LoopPlayer button text |
+| Heading | 28px | 700 | 1.2 | Slide `<h2>` titles (two-cols layout heading) |
 | Display | 48px | 700 | 1.1 | Statement slides (slide 8: "The beat doesn't speed up…"), cover title |
 
 Notes:
@@ -107,7 +107,7 @@ Each slide uses a declared Slidev layout. The executor must use exactly these la
 
 | Slide | # | Layout | Special Directives |
 |-------|---|--------|--------------------|
-| Cover | 1 | `cover` | Title + subline |
+| Cover | 1 | `cover` | Title + subline. Primary focal point: cover title in Display typography (48px, weight 700). |
 | Hook (drum sheet) | 2 | `image` | Full-screen image, no overlay text |
 | Whole note | 3 | `two-cols` | v-click on right column (pizza analogy) |
 | Half note | 4 | `two-cols` | v-click on right column |
@@ -150,7 +150,7 @@ Source: idea.md slide breakdown table
 - Hi-hat row: cells with hit = `background: #eab308`, rest = transparent/dark
 - Snare row: cells with hit = `background: #3b82f6`, rest = transparent/dark
 - Kick row: cells with hit = `background: #ef4444`, rest = transparent/dark
-- Row labels ("HH", "SN", "KK") in white, left-aligned, weight 600
+- Row labels ("HH", "SN", "KK") in white, left-aligned, weight 700
 
 ---
 
