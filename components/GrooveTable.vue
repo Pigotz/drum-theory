@@ -26,8 +26,8 @@ const ROWS = ['hh', 'sn', 'kk']
         <tr>
           <th style="color: white; font-weight: 700; padding: 8px; text-align: left; font-size: 14px;"></th>
           <th
-            v-for="beat in beats"
-            :key="beat"
+            v-for="(beat, i) in beats"
+            :key="i"
             style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;"
           >{{ beat }}</th>
         </tr>
