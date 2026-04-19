@@ -55,7 +55,7 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 02-01-PLAN.md — Install VexFlow 5.0.0 and run percussion spike (visual rendering validation)
+- [x] 02-01-PLAN.md — Install VexFlow 5.0.0 and run percussion spike (visual rendering validation)
 - [ ] 02-02-PLAN.md — Implement DrumStaff.vue and migrate slide 9 to two-cols layout
 
 **Research notes:**
@@ -71,4 +71,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Slide Skeleton + Backing Track + Deploy | 5/5 | Complete | 2026-04-19 |
-| 2. VexFlow Drum Notation | 0/2 | Not started | - |
+| 2. VexFlow Drum Notation | 1/2 | In progress | - |

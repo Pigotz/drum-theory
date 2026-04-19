@@ -21,12 +21,12 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 
 ## Current Position
 
-Phase: 1 of 2 complete — Phase 2 next
-Plan: 5 of 5 in Phase 1 (all complete)
-Status: Phase 1 complete
+Phase: 2 of 2 — VexFlow Drum Notation (in progress)
+Plan: 1 of 2 in Phase 2 complete
+Status: Executing Phase 2
 Last activity: 2026-04-19
 
-Progress: [█████░░░░░] 50%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
@@ -61,6 +61,7 @@ Recent decisions affecting current work:
 - Roadmap: 2-phase build (not 3) — PlayableDrumStaff.vue deferred to v2; coarse granularity confirmed
 - Phase 1: Deploy first within phase — base path is highest-risk integration
 - Phase 2: VexFlow percussion spike required before DrumStaff.vue API is locked
+- 02-01: VexFlow 5.0.0 installed; per-key x-notehead syntax ('a/5/x') confirmed; setKeyStyle chord coloring confirmed; no optimizeDeps.include needed (Vite 7 uses ESM build via exports field automatically)
 - 01-01: base path set in both headmatter (base: /drum-theory/) AND build command (--base /drum-theory/) — belt-and-suspenders against silent 404s
 - 01-01: touch dist/.nojekyll before gh-pages -d dist to protect Vite's _assets/ from Jekyll processing
 - [Phase ?]: LoopPlayer.vue: plain HTML5 audio loop, no Tone.js in Phase 1; src via import.meta.env.BASE_URL + 'backing.mp3'
@@ -74,7 +75,7 @@ None yet.
 
 ### Blockers/Concerns
 
-- Phase 2: VexFlow v5 percussion API specifics unverified — spike must happen before component implementation (open questions documented in ROADMAP.md Phase 2 notes)
+None — spike resolved all VexFlow v5 percussion API questions; Plan 02-02 can proceed.
 
 ## Deferred Items
 
@@ -86,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-19T12:30:00.000Z
-Stopped at: Phase 2 context gathered — 13 implementation decisions captured
-Resume file: .planning/02-vexflow-drum-notation/02-CONTEXT.md
+Last session: 2026-04-19T11:16:00Z
+Stopped at: Completed 02-01-PLAN.md — VexFlow installed, spike written
+Resume file: .planning/02-vexflow-drum-notation/02-02-PLAN.md
