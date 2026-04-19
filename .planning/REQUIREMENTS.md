@@ -9,18 +9,18 @@
 
 ### Slides
 
-- [ ] **SLIDE-01**: Presentation has all 13 slides covering all 4 acts (cover, hook, 5 note duration slides, key insight, drum notation diagram, drum notation quote, volunteer roles, groove grid, outro)
+- [x] **SLIDE-01**: Presentation has all 13 slides covering all 4 acts (cover, hook, 5 note duration slides, key insight, drum notation diagram, drum notation quote, volunteer roles, groove grid, outro)
 - [x] **SLIDE-02**: Note duration slides (slides 3–7) use v-click reveals — symbol shown first, pizza analogy revealed on click
-- [ ] **SLIDE-03**: Act 4 volunteer role cards (kick/snare/hi-hat) revealed one at a time via v-click
-- [ ] **SLIDE-04**: Presenter notes on every slide with timing cues and spoken prompts (visible in Slidev presenter view)
-- [ ] **SLIDE-05**: Countdown timer configured (12 minutes) visible in presenter view
+- [x] **SLIDE-03**: Act 4 volunteer role cards (kick/snare/hi-hat) revealed one at a time via v-click
+- [x] **SLIDE-04**: Presenter notes on every slide with timing cues and spoken prompts (visible in Slidev presenter view)
+- [x] **SLIDE-05**: Countdown timer configured (12 minutes) visible in presenter view
 
 ### Notation
 
 - [ ] **NOTE-01**: Drum notation diagram (slide 9) uses color-coded staff — hi-hat yellow, snare blue, kick red — consistently applied throughout
 - [ ] **NOTE-02**: DrumStaff.vue component renders VexFlow SVG percussion notation with correct percussion clef and x-noteheads for hi-hat
 - [ ] **NOTE-03**: DrumStaff.vue supports two-voice layout — hi-hat stems up, kick stems down, formatted together
-- [ ] **NOTE-04**: Groove grid on Act 4 slide uses HTML color grid (kick=red, snare=blue, hi-hat=yellow) to show beat patterns
+- [x] **NOTE-04**: Groove grid on Act 4 slide uses HTML color grid (kick=red, snare=blue, hi-hat=yellow) to show beat patterns
 
 ### Audio
 
@@ -69,12 +69,12 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SLIDE-01 | Phase 1 | Pending |
+| SLIDE-01 | Phase 1 | Complete |
 | SLIDE-02 | Phase 1 | Complete (01-02) |
-| SLIDE-03 | Phase 1 | Pending |
-| SLIDE-04 | Phase 1 | Pending |
-| SLIDE-05 | Phase 1 | Pending |
-| NOTE-04 | Phase 1 | Pending |
+| SLIDE-03 | Phase 1 | Complete |
+| SLIDE-04 | Phase 1 | Complete |
+| SLIDE-05 | Phase 1 | Complete |
+| NOTE-04 | Phase 1 | Complete |
 | AUDIO-01 | Phase 1 | Complete |
 | AUDIO-02 | Phase 1 | Complete |
 | DEPLOY-01 | Phase 1 | Complete (01-01) |
