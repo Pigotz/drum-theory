@@ -187,8 +187,7 @@ Cue: Move on only after you see people nodding or looking thoughtful.
 -->
 
 ---
-layout: image-right
-image: /drum-sheet.png
+layout: two-cols
 ---
 
 # Reading the Staff
@@ -207,11 +206,38 @@ The position tells you **which drum**, not which pitch.
   </li>
 </ul>
 
+::right::
+
+<script setup>
+const groove1 = {
+  beats: 4,
+  beatValue: 4,
+  voiceUp: [
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x', chordMate: { instrument: 'snare', position: 'c/5' } },
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x', chordMate: { instrument: 'snare', position: 'c/5' } },
+    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
+  ],
+  voiceDown: [
+    { instrument: 'kick', position: 'e/4', duration: 'q' },
+    { instrument: 'kick', position: 'e/4', duration: 'q', rest: true },
+    { instrument: 'kick', position: 'e/4', duration: 'q' },
+    { instrument: 'kick', position: 'e/4', duration: 'q', rest: true },
+  ]
+}
+</script>
+
+<DrumStaff :pattern="groove1" />
+
 <!--
 Spoken: "Unlike piano where position means pitch, on drums position means 'which drum to hit'."
 Spoken: "Yellow up top — that's the hi-hat. Blue in the middle — snare. Red at the bottom — kick."
 Timing: ~90 seconds. Point at colors as you name them.
-Note: The right panel shows a placeholder image — Phase 2 will replace with a VexFlow SVG notation diagram.
+Right panel: live VexFlow percussion stave — point at colors as you name them.
 -->
 
 ---
