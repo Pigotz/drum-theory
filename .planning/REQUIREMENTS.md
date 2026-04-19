@@ -10,7 +10,7 @@
 ### Slides
 
 - [ ] **SLIDE-01**: Presentation has all 13 slides covering all 4 acts (cover, hook, 5 note duration slides, key insight, drum notation diagram, drum notation quote, volunteer roles, groove grid, outro)
-- [ ] **SLIDE-02**: Note duration slides (slides 3–7) use v-click reveals — symbol shown first, pizza analogy revealed on click
+- [x] **SLIDE-02**: Note duration slides (slides 3–7) use v-click reveals — symbol shown first, pizza analogy revealed on click
 - [ ] **SLIDE-03**: Act 4 volunteer role cards (kick/snare/hi-hat) revealed one at a time via v-click
 - [ ] **SLIDE-04**: Presenter notes on every slide with timing cues and spoken prompts (visible in Slidev presenter view)
 - [ ] **SLIDE-05**: Countdown timer configured (12 minutes) visible in presenter view
@@ -70,7 +70,7 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | SLIDE-01 | Phase 1 | Pending |
-| SLIDE-02 | Phase 1 | Pending |
+| SLIDE-02 | Phase 1 | Complete (01-02) |
 | SLIDE-03 | Phase 1 | Pending |
 | SLIDE-04 | Phase 1 | Pending |
 | SLIDE-05 | Phase 1 | Pending |

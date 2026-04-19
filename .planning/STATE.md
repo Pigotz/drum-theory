@@ -63,6 +63,8 @@ Recent decisions affecting current work:
 - 01-01: base path set in both headmatter (base: /drum-theory/) AND build command (--base /drum-theory/) — belt-and-suspenders against silent 404s
 - 01-01: touch dist/.nojekyll before gh-pages -d dist to protect Vite's _assets/ from Jekyll processing
 - [Phase ?]: LoopPlayer.vue: plain HTML5 audio loop, no Tone.js in Phase 1; src via import.meta.env.BASE_URL + 'backing.mp3'
+- 01-02: SVG viewBox 0 0 60 120 portrait — gives notehead room at cy=80 with full stem height; white stroke/fill on dark seriph theme
+- 01-02: backing.mp3 sourced from anars/blank-audio (Option C curl download) — avoids WAV/MP3 MIME type confusion
 
 ### Pending Todos
 
@@ -82,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-19T09:56:39.528Z
-Stopped at: Completed 01-03-PLAN.md — LoopPlayer.vue backing track component
+Last session: 2026-04-19T09:56:09Z
+Stopped at: Completed 01-02-PLAN.md — static assets (SVG note symbols, backing.mp3, drum-sheet.png)
 Resume file: .planning/01-slide-skeleton-backing-track-deploy/01-04-PLAN.md
