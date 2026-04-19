@@ -7,13 +7,19 @@ const playing = ref(false)
 
 const src = import.meta.env.BASE_URL + 'backing.mp3'
 
-const toggle = () => {
+const toggle = async () => {
+  if (!audio.value) return
   if (playing.value) {
     audio.value.pause()
+    playing.value = false
   } else {
-    audio.value.play()
+    try {
+      await audio.value.play()
+      playing.value = true
+    } catch {
+      // autoplay blocked — stay in stopped state
+    }
   }
-  playing.value = !playing.value
 }
 
 onSlideLeave(() => {
