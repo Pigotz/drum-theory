@@ -92,4 +92,4 @@ Deferred from v1.0 — not in v2.0 scope.
 
 ---
 *Requirements defined: 2026-04-19*
-*Last updated: 2026-04-19 after v2.0 milestone init*
+*Last updated: 2026-04-19 after v2.0 roadmap created*
