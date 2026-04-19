@@ -239,6 +239,8 @@ Timing: 20 seconds. Let the diagram breathe. Point if you can project it.
 layout: two-cols
 ---
 
+<div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
 # Reading the Staff
 
 The position tells you **which drum**, not which pitch.
@@ -254,6 +256,8 @@ The position tells you **which drum**, not which pitch.
     ● Kick — bottom (below the staff)
   </li>
 </ul>
+
+</div>
 
 ::right::
 
@@ -280,7 +284,9 @@ const groove1 = {
 }
 </script>
 
-<DrumStaff :pattern="groove1" />
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+  <DrumStaff :pattern="groove1" />
+</div>
 
 <!--
 Spoken: "Unlike piano where position means pitch, on drums position means 'which drum to hit'."
