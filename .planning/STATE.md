@@ -71,7 +71,8 @@ None.
 
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
-| 260419-abc | Slide 13 roles as 3 horizontal rectangles | 2026-04-19 | — | [260419-abc-roles-horizontal-rectangles](.planning/quick/260419-abc-roles-horizontal-rectangles/) |
+| 260419-abc | Slide 13 roles as 3 horizontal rectangles | 2026-04-19 | 692b400 | [260419-abc-roles-horizontal-rectangles](.planning/quick/260419-abc-roles-horizontal-rectangles/) |
+| 260419-def | Slide 13 — vertically center title and rectangles | 2026-04-19 | — | [260419-def-slide13-vertical-center](.planning/quick/260419-def-slide13-vertical-center/) |
 
 ### Blockers/Concerns
 

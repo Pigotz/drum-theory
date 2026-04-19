@@ -310,12 +310,14 @@ Cue: Move immediately to volunteer roles slide after this.
 -->
 
 ---
-layout: default
+layout: none
 ---
 
-# Your Roles Tonight
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: stretch; height: 100%; padding: 48px; gap: 32px;">
 
-<div style="display: flex; gap: 16px; margin-top: 16px;">
+<h1 style="font-size: 36px; font-weight: 700; margin: 0; text-align: center;">Your Roles Tonight</h1>
+
+<div style="display: flex; gap: 16px;">
 
 <v-click>
 <div style="flex: 1; background: #ef4444; color: white; font-weight: 700; font-size: 18px; padding: 24px 16px; border-radius: 6px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;">
@@ -340,6 +342,8 @@ layout: default
   <span style="font-weight: 400; font-size: 15px;">Every eighth note</span>
 </div>
 </v-click>
+
+</div>
 
 </div>
 
