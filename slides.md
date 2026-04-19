@@ -42,6 +42,8 @@ layout: two-cols
 
 ::right::
 
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+
 <v-click>
 
 <div style="padding: 24px;">
@@ -53,6 +55,8 @@ layout: two-cols
 </div>
 
 </v-click>
+
+</div>
 
 <!--
 Spoken: "Four full beats. One pizza. You eat the whole thing and you wait."
@@ -70,6 +74,8 @@ layout: two-cols
 
 ::right::
 
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+
 <v-click>
 
 <div style="padding: 24px;">
@@ -81,6 +87,8 @@ layout: two-cols
 </div>
 
 </v-click>
+
+</div>
 
 <!--
 Spoken: "Two beats. Like cutting the pizza in half and only eating one piece."
@@ -98,6 +106,8 @@ layout: two-cols
 
 ::right::
 
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+
 <v-click>
 
 <div style="padding: 24px;">
@@ -109,6 +119,8 @@ layout: two-cols
 </div>
 
 </v-click>
+
+</div>
 
 <!--
 Spoken: "One beat. This is what you tap your foot to. The heartbeat."
@@ -126,6 +138,8 @@ layout: two-cols
 
 ::right::
 
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+
 <v-click>
 
 <div style="padding: 24px;">
@@ -137,6 +151,8 @@ layout: two-cols
 </div>
 
 </v-click>
+
+</div>
 
 <!--
 Spoken: "Half a beat. Say 'one-and-two-and' — the 'and' is an eighth note."
@@ -154,6 +170,8 @@ layout: two-cols
 
 ::right::
 
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+
 <v-click>
 
 <div style="padding: 24px;">
@@ -165,6 +183,8 @@ layout: two-cols
 </div>
 
 </v-click>
+
+</div>
 
 <!--
 Spoken: "Four per beat. This is where it gets spicy. Skip this slide if running long."
