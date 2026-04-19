@@ -29,7 +29,7 @@
 
 ### Deployment
 
-- [ ] **DEPLOY-01**: Presentation builds successfully with correct base path (`/drum-theory/`) — no 404s for assets on GitHub Pages
+- [x] **DEPLOY-01**: Presentation builds successfully with correct base path (`/drum-theory/`) — no 404s for assets on GitHub Pages
 - [ ] **DEPLOY-02**: Deployed presentation accessible via GitHub Pages URL (manual deploy)
 
 ---
@@ -77,7 +77,7 @@
 | NOTE-04 | Phase 1 | Pending |
 | AUDIO-01 | Phase 1 | Pending |
 | AUDIO-02 | Phase 1 | Pending |
-| DEPLOY-01 | Phase 1 | Pending |
+| DEPLOY-01 | Phase 1 | Complete (01-01) |
 | DEPLOY-02 | Phase 1 | Pending |
 | NOTE-01 | Phase 2 | Pending |
 | NOTE-02 | Phase 2 | Pending |
