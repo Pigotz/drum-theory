@@ -1,5 +1,19 @@
 # Drum Theory Presentation
 
+## Current Milestone: v2.0 Polish & Aesthetics
+
+**Goal:** Redesign all 13 slides for a sharp, dark aesthetic matching the Dribbble visual references — replacing the light `seriph` theme with a bold dark design that makes VexFlow notation pop.
+
+**Target features:**
+- Dark background theme across all slides (fix white-background issue)
+- SVG note symbols re-rendered for dark backgrounds (slides 3–7)
+- Typography overhaul — sharp, bold, on-brand
+- Color palette audit — kick=red, snare=blue, hi-hat=yellow consistent throughout
+- VexFlow stave dark-mode compatibility
+- Slide layout polish (spacing, hierarchy, alignment)
+
+---
+
 ## What This Is
 
 A Slidev-powered presentation called *"You Can't Read This"* — a 12-minute PowerPoint night talk for close friends. The presenter (a drummer) teaches drum notation through pizza analogies and audience participation, culminating in a live "Human Drum" session where volunteers become a real groove. v1.0 shipped with all 13 slides, color-coded VexFlow percussion notation, and a looping backing track player.
@@ -27,10 +41,16 @@ The audience walks away having actually played a drum groove together — the th
 
 ### Active
 
-- [ ] PlayableDrumStaff.vue — click-to-play audio per notation slide via Tone.js with drum samples (v2)
-- [ ] Beat cursor sweeps across the VexFlow stave in sync with Tone.js playback (v2)
-- [ ] GitHub Actions auto-deploy on push to main — `deploy.yml` (v2)
-- [ ] Short video clips or GIFs of presenter playing each beat, embedded in slides (v2)
+- [ ] Dark theme applied globally — all slides use dark background, no white-on-dark rendering issues — v2.0
+- [ ] SVG note symbols (slides 3–7) are visible on dark backgrounds — v2.0
+- [ ] Typography is sharp, bold, and on-brand across all slides — v2.0
+- [ ] Kick=red, snare=blue, hi-hat=yellow color coding consistent throughout all slides and components — v2.0
+- [ ] VexFlow stave renders correctly on dark background — v2.0
+- [ ] Slide layout is polished: spacing, hierarchy, alignment improved — v2.0
+- [ ] PlayableDrumStaff.vue — click-to-play audio per notation slide via Tone.js with drum samples (future)
+- [ ] Beat cursor sweeps across the VexFlow stave in sync with Tone.js playback (future)
+- [ ] GitHub Actions auto-deploy on push to main — `deploy.yml` (future)
+- [ ] Short video clips or GIFs of presenter playing each beat, embedded in slides (future)
 
 ### Out of Scope
 
@@ -58,7 +78,7 @@ The audience walks away having actually played a drum groove together — the th
 
 - **Tech stack:** Slidev + Vue 3 + VexFlow + Tone.js — no alternative frameworks
 - **Hosting:** GitHub Pages under `/drum-theory/` subdirectory — base path must be set in frontmatter
-- **Design:** Theme `seriph` (light background); color coding: kick = red, snare = blue, hi-hat = yellow; one concept per slide
+- **Design:** Dark theme (replacing `seriph`); color coding: kick = red, snare = blue, hi-hat = yellow; one concept per slide
 - **VexFlow:** SVG backend only (not Canvas); all init inside `onMounted()`, guard null refs
 - **Slidev lifecycle:** use `onSlideEnter`/`onSlideLeave` from `@slidev/client` — not `onMounted`/`onUnmounted`
 
@@ -88,4 +108,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-19 after v1.0 milestone*
+*Last updated: 2026-04-19 after v2.0 milestone started*
