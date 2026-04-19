@@ -551,6 +551,35 @@ layout: two-cols-header
 </div>
 
 ---
+layout: default
+---
+
+<div style="display: flex; flex-direction: column; height: 100%; padding: 16px 0;">
+  <div style="display: flex; align-items: center; justify-content: center; padding: 12px 0 8px;">
+    <h1>Upbeat Pop</h1>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; max-width: 640px; width: 100%; margin: 0 auto; min-height: 0;">
+    <div style="flex: 1; min-height: 0;">
+      <GrooveTable :groove="{
+        hh: [1, 1, 1, 1, 1, 1, 1, 1],
+        sn: [0, 0, 1, 0, 0, 0, 1, 0],
+        kk: [1, 0, 0, 0, 0, 1, 0, 0],
+      }" />
+    </div>
+    <GrooveDrumStaff :groove="{
+      hh: [1, 1, 1, 1, 1, 1, 1, 1],
+      sn: [0, 0, 1, 0, 0, 0, 1, 0],
+      kk: [1, 0, 0, 0, 0, 1, 0, 0],
+    }" :width="640" />
+  </div>
+</div>
+
+<!--
+Shown: Upbeat Pop groove from the drum sheet on slide 2.
+Kick on beat 1 and 3-and (the "upbeat" syncopation), snare on 2 and 4, eighth hi-hat.
+-->
+
+---
 layout: end
 ---
 
