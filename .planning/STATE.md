@@ -78,6 +78,7 @@ None.
 | 260419-mno | Slide 20: Upbeat Pop groove from drum-sheet.png (table + VexFlow, no right col) | 2026-04-19 | 38251cf | [260419-mno-upbeat-pop-slide](.planning/quick/260419-mno-upbeat-pop-slide/) |
 | 260419-pqr | Fix slide-20: multi-bar VexFlow rendering + 16-col table header | 2026-04-19 | 663b038 | — |
 | 260419-stu | Fix GrooveDrumStaff: multi-bar renders side-by-side not stacked | 2026-04-19 | dd1af0d | — |
+| 260419-vwx | Add showRests prop to GrooveDrumStaff; show 8th rests on slide 20 | 2026-04-19 | 3aea116 | — |
 
 ### Blockers/Concerns
 
