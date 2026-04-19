@@ -7,9 +7,6 @@ transition: slide-left
 base: /drum-theory/
 timer: countdown
 duration: 12min
----
-
----
 layout: cover
 ---
 
