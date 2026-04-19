@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@slidev/cli": "^52.14.2",
+    "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "vexflow": "^5.0.0",
     "vue": "^3.5.29"
