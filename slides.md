@@ -23,6 +23,7 @@ Timing: 20 seconds. Don't explain anything yet.
 layout: image
 image: /drum-sheet.png
 backgroundSize: contain
+backgroundPadding: 24px
 ---
 
 <!--
@@ -52,7 +53,7 @@ layout: two-cols
 
 *The whole pizza — you wait forever*
 
-4 beats. Longest common note. Count one-two-three-four before moving on.
+4 beats.<br/>Longest common note.<br/>Count one-two-three-four before moving on.
 
 </div>
 
@@ -86,7 +87,7 @@ layout: two-cols
 
 *Half a pizza*
 
-2 beats. Still a long time. Count one-two.
+2 beats.<br/>Still a long time.<br/>Count one-two.
 
 </div>
 
@@ -120,7 +121,7 @@ layout: two-cols
 
 *A slice — this is the normal pulse, what you tap your foot to*
 
-1 beat. This is the heartbeat of music.
+1 beat.<br/>This is the heartbeat of music.
 
 </div>
 
@@ -188,7 +189,7 @@ layout: two-cols
 
 *A tiny bite — four fit in one beat, things get spicy*
 
-¼ beat. Four sounds crammed into one beat. This is where drummers live.
+¼ beat.<br/>Four sounds crammed into one beat.<br/>This is where drummers live.
 
 </div>
 
@@ -207,7 +208,7 @@ layout: center
 ---
 
 <div style="font-size: 48px; font-weight: 700; line-height: 1.1; text-align: center; max-width: 800px;">
-  The beat doesn't speed up. You just fit more sounds inside the same time.
+  The beat doesn't speed up.<br/><br/>You just fit more sounds inside the same time.
 </div>
 
 <!--
@@ -215,6 +216,12 @@ Spoken: "The beat doesn't speed up. You just fit more sounds inside the same tim
 Timing: Say it once. Pause 5 full seconds. Let it breathe. This is the mic-drop moment.
 Cue: Move on only after you see people nodding or looking thoughtful.
 -->
+
+---
+layout: section
+---
+
+# How do you read/write drums on music sheets?
 
 ---
 layout: image
