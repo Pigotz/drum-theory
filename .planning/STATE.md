@@ -76,6 +76,7 @@ None.
 | 260419-ghi | Extract slide 14 groove table into reusable GrooveTable.vue | 2026-04-19 | d0ce7b4 | [260419-ghi-groove-table-component](.planning/quick/260419-ghi-groove-table-component/) |
 | 260419-jkl | Add VexFlow notation under groove tables in slides 14–19 | 2026-04-19 | a50d3fa | [260419-jkl-vexflow-under-groove-tables](.planning/quick/260419-jkl-vexflow-under-groove-tables/) |
 | 260419-mno | Slide 20: Upbeat Pop groove from drum-sheet.png (table + VexFlow, no right col) | 2026-04-19 | 38251cf | [260419-mno-upbeat-pop-slide](.planning/quick/260419-mno-upbeat-pop-slide/) |
+| 260419-pqr | Fix slide-20: multi-bar VexFlow rendering + 16-col table header | 2026-04-19 | 663b038 | — |
 
 ### Blockers/Concerns
 
