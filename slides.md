@@ -315,23 +315,33 @@ layout: default
 
 # Your Roles Tonight
 
+<div style="display: flex; gap: 16px; margin-top: 16px;">
+
 <v-click>
-<div style="background: #ef4444; color: white; font-weight: 700; font-size: 18px; padding: 16px; margin: 8px 0; border-radius: 6px;">
-  Chief Kick Officer — BOOM — Beats 1 and 3
+<div style="flex: 1; background: #ef4444; color: white; font-weight: 700; font-size: 18px; padding: 24px 16px; border-radius: 6px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;">
+  <span>Chief Kick Officer</span>
+  <span style="font-size: 28px;">BOOM</span>
+  <span style="font-weight: 400; font-size: 15px;">Beats 1 and 3</span>
 </div>
 </v-click>
 
 <v-click>
-<div style="background: #3b82f6; color: white; font-weight: 700; font-size: 18px; padding: 16px; margin: 8px 0; border-radius: 6px;">
-  Snare Department Head — PAH — Beats 2 and 4
+<div style="flex: 1; background: #3b82f6; color: white; font-weight: 700; font-size: 18px; padding: 24px 16px; border-radius: 6px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;">
+  <span>Snare Department Head</span>
+  <span style="font-size: 28px;">PAH</span>
+  <span style="font-weight: 400; font-size: 15px;">Beats 2 and 4</span>
 </div>
 </v-click>
 
 <v-click>
-<div style="background: #eab308; color: white; font-weight: 700; font-size: 18px; padding: 16px; margin: 8px 0; border-radius: 6px;">
-  Hi-Hat Technician — tss — Every eighth note
+<div style="flex: 1; background: #eab308; color: white; font-weight: 700; font-size: 18px; padding: 24px 16px; border-radius: 6px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;">
+  <span>Hi-Hat Technician</span>
+  <span style="font-size: 28px;">tss</span>
+  <span style="font-weight: 400; font-size: 15px;">Every eighth note</span>
 </div>
 </v-click>
+
+</div>
 
 <!--
 Spoken: Click to reveal each role. Name the role, have that group of people raise their hand.
@@ -346,57 +356,56 @@ layout: two-cols
 ---
 
 <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
-<table style="border-collapse: collapse; width: 100%;">
-
-  <thead>
-    <tr>
-      <th style="color: white; font-weight: 700; padding: 8px; text-align: left; font-size: 14px;"></th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">1</th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">2</th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">3</th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">4</th>
-      <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="color: white; font-weight: 700; padding: 8px; font-size: 14px;">HH</td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-      <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
-    </tr>
-    <tr>
-      <td style="color: white; font-weight: 700; padding: 8px; font-size: 14px;">SN</td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="background: #3b82f6; padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="background: #3b82f6; padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-    </tr>
-    <tr>
-      <td style="color: white; font-weight: 700; padding: 8px; font-size: 14px;">KK</td>
-      <td style="background: #ef4444; padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="background: #ef4444; padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-      <td style="padding: 8px; min-width: 24px;"></td>
-    </tr>
-  </tbody>
-</table>
+  <table style="border-collapse: collapse; width: 100%;">
+    <thead>
+      <tr>
+        <th style="color: white; font-weight: 700; padding: 8px; text-align: left; font-size: 14px;"></th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">1</th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">2</th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">3</th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">4</th>
+        <th style="color: white; font-size: 14px; font-weight: 700; padding: 8px; text-align: center;">+</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color: white; font-weight: 700; padding: 8px; font-size: 14px;">HH</td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+        <td style="background: #eab308; min-width: 24px; padding: 8px;"></td>
+      </tr>
+      <tr>
+        <td style="color: white; font-weight: 700; padding: 8px; font-size: 14px;">SN</td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="background: #3b82f6; padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="background: #3b82f6; padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+      </tr>
+      <tr>
+        <td style="color: white; font-weight: 700; padding: 8px; font-size: 14px;">KK</td>
+        <td style="background: #ef4444; padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="background: #ef4444; padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+        <td style="padding: 8px; min-width: 24px;"></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ::right::
