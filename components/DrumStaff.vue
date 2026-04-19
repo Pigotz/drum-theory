@@ -50,8 +50,8 @@ function render() {
     const staveWidth = props.width - staveX - 10
     const stave = new Stave(staveX, staveY, staveWidth)
     stave.addClef('percussion').addTimeSignature('4/4')
-    ctx.setStrokeStyle('#e2e8f0')
-    ctx.setFillStyle('#e2e8f0')
+    ctx.setStrokeStyle('#ffffff')
+    ctx.setFillStyle('#ffffff')
     stave.setContext(ctx).draw()
 
     // 4. Build voiceUp notes (hi-hat and snare, stems up)
@@ -91,6 +91,7 @@ function render() {
         // Chord beat: color each notehead independently (RESEARCH.md Pattern 4)
         upNotes[i].setKeyStyle(0, { fillStyle: COLORS[beat.instrument], strokeStyle: COLORS[beat.instrument] })
         upNotes[i].setKeyStyle(1, { fillStyle: COLORS[beat.chordMate.instrument], strokeStyle: COLORS[beat.chordMate.instrument] })
+        upNotes[i].setStemStyle({ fillStyle: '#ffffff', strokeStyle: '#ffffff' })
       } else {
         // Single-instrument beat: color the whole note
         upNotes[i].setStyle({

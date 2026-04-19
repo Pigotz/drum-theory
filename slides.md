@@ -266,26 +266,26 @@ const groove1 = {
   beats: 4,
   beatValue: 4,
   voiceUp: [
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x', chordMate: { instrument: 'snare', position: 'c/5' } },
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x', chordMate: { instrument: 'snare', position: 'c/5' } },
-    { instrument: 'hihat', position: 'a/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x', chordMate: { instrument: 'snare', position: 'c/5' } },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x' },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x', chordMate: { instrument: 'snare', position: 'c/5' } },
+    { instrument: 'hihat', position: 'g/5', duration: '8', noteType: 'x' },
   ],
   voiceDown: [
-    { instrument: 'kick', position: 'e/4', duration: 'q' },
-    { instrument: 'kick', position: 'e/4', duration: 'q', rest: true },
-    { instrument: 'kick', position: 'e/4', duration: 'q' },
-    { instrument: 'kick', position: 'e/4', duration: 'q', rest: true },
+    { instrument: 'kick', position: 'f/4', duration: 'q' },
+    { instrument: 'kick', position: 'f/4', duration: 'q', rest: true },
+    { instrument: 'kick', position: 'f/4', duration: 'q' },
+    { instrument: 'kick', position: 'f/4', duration: 'q', rest: true },
   ]
 }
 </script>
 
-<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
-  <DrumStaff :pattern="groove1" />
+<div style="display: flex; align-items: center; justify-content: center; height: 100%; overflow: hidden;">
+  <DrumStaff :pattern="groove1" :width="420" />
 </div>
 
 <!--
