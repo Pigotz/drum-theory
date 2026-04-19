@@ -12,7 +12,7 @@ Two-phase build for the "You Can't Read This" Slidev presentation. Phase 1 deliv
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Slide Skeleton + Backing Track + Deploy** - All 13 slides authored, LoopPlayer.vue working, deployed to GitHub Pages
+- [x] **Phase 1: Slide Skeleton + Backing Track + Deploy** - All 13 slides authored, LoopPlayer.vue working, deployed to GitHub Pages
 - [ ] **Phase 2: VexFlow Drum Notation** - DrumStaff.vue renders color-coded percussion staves in place of color grids
 
 ## Phase Details
@@ -35,7 +35,7 @@ Plans:
 - [x] 01-02-PLAN.md — Create SVG note symbols, silent MP3 placeholder, drum-sheet placeholder
 - [x] 01-03-PLAN.md — Create LoopPlayer.vue backing track component
 - [x] 01-04-PLAN.md — Author all 13 slides with content, v-click, groove grid, and speaker notes
-- [ ] 01-05-PLAN.md — Build and deploy to GitHub Pages, verify live URL
+- [x] 01-05-PLAN.md — Build and deploy to GitHub Pages, verify live URL
 
 **Research notes:**
 - Wire GitHub Pages deploy immediately after scaffold — base path (`/drum-theory/`) is the riskiest external integration; silent 404s if misconfigured
@@ -66,5 +66,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Slide Skeleton + Backing Track + Deploy | 4/5 | In progress | - |
+| 1. Slide Skeleton + Backing Track + Deploy | 5/5 | Complete | 2026-04-19 |
 | 2. VexFlow Drum Notation | 0/? | Not started | - |
