@@ -35,7 +35,13 @@ Full archive: `.planning/milestones/v1.0-ROADMAP.md`
   3. Slide headings and body text use sharp, bold, on-brand typography throughout
   4. Kick=red, snare=blue, hi-hat=yellow are consistent across every slide, the groove grid, and the VexFlow stave
   5. DrumStaff.vue stave lines, noteheads, and stems are all visible on the dark background with per-notehead color coding intact
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Create style.css (dark theme, Space Grotesk, groove grid, blend mode) + remove theme: seriph
+- [ ] 03-02-PLAN.md — Update DrumStaff.vue (VexFlow dark-mode context fix) + LoopPlayer.vue (restyle + onSlideLeave cleanup)
+- [ ] 03-03-PLAN.md — Visual QA across all 13 slides + production build + GitHub Pages deploy
+
 **UI hint**: yes
 
 ## Progress
@@ -44,4 +50,4 @@ Full archive: `.planning/milestones/v1.0-ROADMAP.md`
 |-------|-----------|----------------|--------|-----------|
 | 1. Slide Skeleton + Backing Track + Deploy | v1.0 | 5/5 | Complete | 2026-04-19 |
 | 2. VexFlow Drum Notation | v1.0 | 2/2 | Complete | 2026-04-19 |
-| 3. Visual Redesign | v2.0 | 0/? | Not started | - |
+| 3. Visual Redesign | v2.0 | 0/3 | Not started | - |
